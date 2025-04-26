@@ -1,12 +1,11 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import logo from "../../assets/Logo.svg";
 import avatar from "../../assets/Avatar.jpg";
 import "./Header.css";
 
-export default function Header() {
+export default function Header({ activeTab, setActiveTab }) {
+  // <-- получаем от родителя
   const tabs = ["Главная", "Статистика"];
-  const [activeTab, setActiveTab] = useState("Главная");
 
   return (
     <header className="header">

@@ -1,0 +1,14 @@
+.statistic-wrapper {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.statistic-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.statistic-wrapper p {
+  font-size: 1.2rem;
+  color: #666;
+}
