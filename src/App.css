@@ -14,3 +14,8 @@
   margin-top: 60px;
   gap: 60px;
 }
+
+.app-content.statistic-mode {
+  display: block;
+  margin-top: 60px;
+}

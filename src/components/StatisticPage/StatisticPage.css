@@ -1,14 +1,5 @@
-.statistic-wrapper {
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.statistic-wrapper h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.statistic-wrapper p {
-  font-size: 1.2rem;
-  color: #666;
+.statistic-page-wrapper {
+  display: flex;
+  gap: 70px;
+  padding: 0 0 40px 241px;
 }

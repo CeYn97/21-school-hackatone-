@@ -1,0 +1,138 @@
+@import url(https://db.onlinewebfonts.com/c/2d130488c7306881cf236b40ea2a1020?family=SB+Sans+Display+Semibold);
+
+.metric-panel-wrapper {
+  border: 1px solid black;
+  border-radius: 41px;
+  padding: 9px;
+  box-sizing: border-box;
+  font-family: "SB Sans Display Semibold";
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: 235px;
+}
+
+.metric-panel-wrapper.metric-closed {
+  width: 360px;
+  height: 87px;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-panel-wrapper.metric-open {
+  width: 360px;
+  height: auto;
+}
+
+.metric-group {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 41px;
+  overflow: hidden;
+}
+
+.metric-group-header {
+  padding: 22px 0 18px 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.metric-group-content {
+  padding: 5px 40px 22px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.metric-checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.metric-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #861be3;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.metric-checkbox:checked {
+  background-color: #861be3;
+}
+
+.metric-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.metric-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 23px;
+  margin-top: 10px;
+}
+
+.metric-reset-button {
+  background: none;
+  border: none;
+  color: #747474;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.metric-action-buttons {
+  display: flex;
+  gap: 35px;
+}
+
+.metric-apply-button {
+  border: 1px solid black;
+  border-radius: 21px;
+  padding: 10px 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+}
+
+.metric-apply-button:hover {
+  transform: scale(1.03);
+}
+
+.metric-update-button {
+  border: 1px solid black;
+  border-radius: 21px;
+  padding: 10px 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+}
+
+.metric-update-button:hover {
+  transform: scale(1.03);
+}

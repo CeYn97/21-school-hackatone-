@@ -12,7 +12,11 @@ function App() {
   return (
     <div className="app-wrapper">
       <Header activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="app-content">
+      <div
+        className={`app-content ${
+          activeTab === "Статистика" ? "statistic-mode" : ""
+        }`}
+      >
         {activeTab === "Главная" && (
           <>
             <FilterPanel onApplyFilters={setFilters} />

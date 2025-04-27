@@ -1,0 +1,23 @@
+.chart-placeholder {
+  margin: 2rem auto;
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.radar-chart-block {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  flex: 1;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 45px;
+}
+
+.radar-chart-title-wrapper {
+  width: 27.8%;
+  border: 1px solid black;
+  border-radius: 41px;
+  padding: 14px 24px;
+}
