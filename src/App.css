@@ -13,9 +13,10 @@
   align-items: flex-start;
   margin-top: 60px;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
 .app-content.statistic-mode {
-  display: block;
-  margin-top: 60px;
+  /* display: block;
+  margin-top: 60px; */
 }

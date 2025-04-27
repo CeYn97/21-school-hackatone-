@@ -1,0 +1,120 @@
+@import url(https://db.onlinewebfonts.com/c/2d130488c7306881cf236b40ea2a1020?family=SB+Sans+Display+Semibold);
+
+.langs-panel {
+  border: 1px solid black;
+  border-radius: 41px;
+  width: 360px;
+  padding: 9px;
+  box-sizing: border-box;
+  font-family: "SB Sans Display Semibold";
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 235px;
+}
+
+.langs-group {
+  border: 1px solid black;
+  border-radius: 41px;
+  overflow: hidden;
+}
+
+.langs-group-header {
+  padding: 20px 0 20px 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.langs-group-content {
+  padding: 0 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.langs-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.langs-checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.langs-checkbox {
+  appearance: none;
+  border: 2px solid #861be3;
+  background-color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.langs-checkbox:checked {
+  background-color: #861be3;
+}
+
+.langs-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.langs-range-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.langs-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 14px;
+}
+
+.langs-reset-button {
+  background: none;
+  border: none;
+  color: #747474;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.langs-action-buttons {
+  display: flex;
+  gap: 35px;
+}
+
+.langs-apply-button,
+.langs-update-button {
+  border: 1px solid black;
+  border-radius: 21px;
+  padding: 10px 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+}
+
+.langs-apply-button:hover,
+.langs-update-button:hover {
+  transform: scale(1.03);
+}

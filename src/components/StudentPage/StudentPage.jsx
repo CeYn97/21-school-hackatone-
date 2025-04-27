@@ -92,7 +92,7 @@ function UserCard({ user }) {
           <h3 className="usercard-section-title">Soft Skills</h3>
           <div className="usercard-langs-list">
             {softSkills.map((skill, idx) => (
-              <div key={idx} className="usercard-lang-item">
+              <div key={idx} className="usercard-skills-item">
                 {skill}
               </div>
             ))}

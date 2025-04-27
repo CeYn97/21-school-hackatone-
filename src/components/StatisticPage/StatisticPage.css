@@ -1,5 +1,14 @@
 .statistic-page-wrapper {
   display: flex;
-  gap: 70px;
-  padding: 0 0 40px 241px;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+  margin-left: 241px;
+}
+
+.statistic-block-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: flex-start;
 }
