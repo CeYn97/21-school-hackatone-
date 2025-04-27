@@ -7,11 +7,11 @@ export default function StudentPage({
   selectedSoftSkills = [],
 }) {
   const [users, setUsers] = useState([]);
-  const [isUsersLoading, setIsUsersLoading] = useState(true); // <--- Новый флаг
+  const [isUsersLoading, setIsUsersLoading] = useState(true);
 
   useEffect(() => {
     async function fetchUsers() {
-      setIsUsersLoading(true); // Начинаем загрузку
+      setIsUsersLoading(true);
       let url = `http://localhost:3001/users?page=1&limit=200`;
 
       const queryParams = [];
@@ -33,12 +33,11 @@ export default function StudentPage({
       const res = await fetch(url);
       const data = await res.json();
       setUsers(data.users);
-      setIsUsersLoading(false); // Завершаем загрузку
+      setIsUsersLoading(false);
     }
     fetchUsers();
   }, [selectedLanguages, selectedSoftSkills]);
 
-  // Пока идёт загрузка - ничего не показывать (можно сюда вставить спиннер потом)
   if (isUsersLoading) {
     return null;
   }
