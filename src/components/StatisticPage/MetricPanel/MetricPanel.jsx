@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./MetricPanel.css"; // Стили отдельно
+import "./MetricPanel.css";
 
 export default function MetricPanel({
   selectedMetrics,

@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/2d130488c7306881cf236b40ea2a1020?family=SB+Sans+Display+Semibold);
+
 .chart-placeholder {
   margin: 2rem auto;
   text-align: center;
@@ -7,17 +9,57 @@
 
 .radar-chart-block {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 500px;
   flex: 1;
   background: #fff;
   border: 1px solid #000;
   border-radius: 45px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .radar-chart-title-wrapper {
-  width: 27.8%;
+  white-space: nowrap;
+  font-family: "SB Sans Display Semibold";
+  font-size: 18px;
+  font-weight: 400;
+  height: 48px;
   border: 1px solid black;
   border-radius: 41px;
   padding: 14px 24px;
+  margin-bottom: 30px;
+}
+
+.radar-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 64, 64, 0.4);
+  border: 2px solid #ff2f2f;
+  border-radius: 41px;
+  padding: 14px 24px;
+  height: 48px;
+  font-family: "SB Sans Display Semibold";
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.radar-loading {
+  font-size: 20px;
+  color: #861be3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 100px;
 }
